@@ -1,0 +1,376 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #333;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.navbar a.btn-login {
+  background-color: #008148;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Space between Log In and Sign Up buttons */
+}
+
+.navbar a.btn-signup {
+  background-color: #008148;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #008148;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Main Content Sections */
+main {
+  padding-top: 80px; /* Adjust according to header height */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.home {
+  background-image: url(Starbucks\ backround.jpg);
+  padding: 80px 0;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 3.5rem;
+  color: #008148;
+  margin-bottom: 20px;
+}
+
+.home-content span {
+  font-weight: bold;
+}
+
+.home-content p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #008148;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: #00573e;
+  transform: scale(1.05);
+}
+
+.home-image {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-image img {
+  max-width: 100%;
+}
+
+.shop {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: start;
+}
+
+.shop-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.shop-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.shop-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.shop-item p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.shop-item .btn {
+  background-color: #008148;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.shop-item .btn:hover {
+  background-color: #00573e;
+}
+
+.delivery {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.delivery-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.delivery-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.delivery-text {
+  max-width: 500px;
+}
+
+.delivery-text h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.delivery-text p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.app {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.app-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.app-text {
+  max-width: 500px;
+}
+
+.app-text h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.app-text p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.app-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.about {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.social {
+  margin-bottom: 30px;
+}
+
+.social a {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #008148;
+}
+
+.links a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #008148;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.9);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+  }
+
+  .navbar.active {
+      transform: translateY(0);
+  }
+
+  .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+
+  .navbar a {
+      padding: 20px;
+      font-size: 1.2rem;
+  }
+}

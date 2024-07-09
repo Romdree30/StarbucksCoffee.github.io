@@ -1,0 +1,136 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    min-height: 100vh; /* Ensure page height covers viewport */
+    position: relative; /* Set body as relative for absolute positioning of footer */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #008148;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Main Content Sections */
+main {
+    padding-top: 120px;
+    padding-bottom: 60px; /* Adjust padding bottom to accommodate footer */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.signup {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #008148;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00573e;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

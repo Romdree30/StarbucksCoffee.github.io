@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Starbucks</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Starbucks Logo"></a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="login">
+            <div class="container">
+                <h2 class="section-title">Log In to Your Account</h2>
+                <form id="loginForm" action="submit-login.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&#169; 2024 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="loginscript.js"></script>
+    <script>
+        // JavaScript to handle form submission and reset
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            // Here you can add further validation if needed
+
+            // Reset the form after submission
+            loginForm.reset();
+        });
+    </script>
+</body>
+</html>
